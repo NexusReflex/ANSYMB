@@ -1,0 +1,672 @@
+Library {
+  Name			  "ScienceStimHasomed_Lib"
+  Version		  6.6
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Jul 20 07:45:35 2006"
+  Creator		  "henrik"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "henrik"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jun 17 00:36:14 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:49>"
+  ConfigurationManager	  "None"
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelVerboseBuild	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    8
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "ScienceStimHasomed_Lib"
+    Location		    [23, 111, 587, 378]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulator Interface"
+      Ports		      [3, 1]
+      Position		      [40, 49, 255, 211]
+      FontSize		      12
+      FontWeight	      "bold"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskHideContents	      off
+      MaskType		      "Stimulator Interface (RehaStim - Hasomed GmbH)"
+      MaskDescription	      "Communication to the 8-channel RehaStim Stimula"
+"tor (HASOMED GmbH) through the serial port.\n\nSample Time:	  The samp"
+"le time of the block (not neccessarily of the stimulation).\nSerial Port:"
+"	  The serial port connected to the stimulator.\nChannels:	  An"
+" array of channel numbers to be used (e.g. [1 2 5]).\nMain Time:	  The"
+" stimulation period (set this to 0 for external triggering).\nGroup Time:"
+"	  The time between pulses in a group (doublet or triplet).\nLow Freq "
+"Ch:	  A sub-set of the channels selected for low frequency.\nLow Freq "
+"Fc:	  Stimulation is only every n times (n=factor).\n"
+      MaskHelp		      "eval('open(''SciencStimHasomed_Help.html'')')"
+      MaskPromptString	      "Sample Time:|Serial Port:|Channels to be Stimul"
+"ated:|Main Time in ms (only in steps of 0.5 ms):|Group Time in ms (only in st"
+"eps of 0.5 ms):|Low Frequency Channels:|Low Frequency Factor:|Enable mute per"
+"iod output|Enable doublets and triplets"
+      MaskStyleString	      "edit,popup(COM1|COM2|COM3|COM4|COM5|COM6|COM7|C"
+"OM8|COM9|COM10|COM11|COM12|COM13|COM14|COM15|COM16|COM17|COM18|COM19|COM20),e"
+"dit,edit,edit,edit,edit,checkbox,checkbox"
+      MaskTunableValueString  "on,off,on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||||% Get the mask parameter values. This i"
+"s a cell array of strings.\nmaskStr = get_param(gcb,'MaskValues');\n% The dou"
+"blet / triplet flag is the 9th mask parameter.\n% Check the value selected \n"
+"if strcmp(maskStr{9},'on'),\n    % show associated parameter (Group Time)\n  "
+"  set_param(gcb,'MaskVisibilities',{'on';'on';'on';'on';'on';'on';'on';'on';'"
+"on'})\nelse\n    % hide associated parameter (Group Time)\n    set_param(gcb,"
+"'MaskVisibilities',{'on';'on';'on';'on';'off';'on';'on';'on';'on'})\nend"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,,"
+      MaskVariables	      "Ts=@1;com_port=@2;channelstim=@3;tsone=@4;tstwo"
+"=@5;channellf=@6;nfactor=@7;outflag=@8;dtflag=@9;"
+      MaskInitialization      "load_system simulink\n%------------------------"
+"---------------------------------------------------\n% Mute Output\n% Get the"
+" mask parameter values. This is a cell array of strings.\nmaskStr = get_param"
+"(gcb,'MaskValues');\n% The outflag is the 8th mask parameter.\n    block = 'm"
+"ute period [ms]';\n    system_block = [gcb '/' block];\n    srcblock= 'S-Func"
+"tion';\n    system_srcblock= [gcb '/' srcblock];\n    pos=get_param(system_bl"
+"ock,'position');\n    blocktype=get_param(system_block,'blocktype');\n% Check"
+" the value selected \nif strcmp(maskStr{8},'on'),\n    if ~strcmp(blocktype,'"
+"Outport')\n        delete_line(gcb, [srcblock '/1'], [block '/1']);\n        "
+"delete_block(system_block);\n        add_block('simulink/Sinks/Out1',system_b"
+"lock,'position',pos);\n        add_line(gcb, [srcblock '/1'], [block '/1']);"
+"\n    end\nelse\n    if ~strcmp(blocktype,'Terminator')\n        delete_line("
+"gcb, [srcblock '/1'], [block '/1']);\n        delete_block(system_block);\n  "
+"      add_block('simulink/Sinks/Terminator',system_block,'position',pos);\n  "
+"      add_line(gcb, [srcblock '/1'], [block '/1']);\n    end\nend\n%---------"
+"------------------------------------------------------------------\n% Mode in"
+"put\n% Get the mask parameter values. This is a cell array of strings.\nmaskS"
+"tr = get_param(gcb,'MaskValues');\n% The doublet / triplet flag is the 9th ma"
+"sk parameter.\n    block = 'mode';\n    system_block = [gcb '/' block];\n    "
+"sinkblock= 'S-Function';\n    system_sinkblock= [gcb '/' sinkblock];\n    pos"
+"=get_param(system_block,'position');\n    blocktype=get_param(system_block,'b"
+"locktype');\n% Check the value selected \nif strcmp(maskStr{9},'on'),\n    if"
+" ~strcmp(blocktype,'Inport')\n        delete_line(gcb, [block '/1'], [sinkblo"
+"ck '/3']);\n        delete_block(system_block);\n        add_block('simulink/"
+"Sources/In1',system_block,'Port','3','position',pos);\n        add_line(gcb, "
+"[block '/1'], [sinkblock '/3']);\n    end\nelse % disable mode input, setit t"
+"o zeros\n    if ~strcmp(blocktype,'Constant')\n        delete_line(gcb, [bloc"
+"k '/1'], [sinkblock '/3']);\n        delete_block(system_block);\n        add"
+"_block('simulink/Sources/Constant',system_block,'position',pos);\n        set"
+"_param(system_block,'value','zeros(1,length(channelstim))');\n        add_lin"
+"e(gcb, [block '/1'], [sinkblock '/3']);\n    end\n    % Make sure Group time "
+"is large enough if doublet / triplet is off\n    % It must be at least 1.5 x "
+"Number_of_Channels, so we add 0.5 to that\n    tstwo = 1.5*length(channelstim"
+")+0.5;\nend\n\n\n%-----------------------------------------------------------"
+"----------------\n% default minimal Mask Display string\nMDstr=['image(imread"
+"(''RehaStim-background.png''), [0.05 0.25 0.9 0.9]);'...\n    'port_label(''i"
+"nput'', 1, ''current'');'...\n    'port_label(''input'', 2, ''pulsewidth'');'"
+"...\n    'text(0.25,0.1,[''Serial Port: COM'' num2str(com_port)],''horizontal"
+"Alignment'',''left'',''verticalAlignment'',''bottom'');'...\n    'text(0.25,0"
+",[''Channels: '' num2str(channelstim)],''horizontalAlignment'',''left'',''ver"
+"ticalAlignment'',''bottom'');'];\n% get the number of inputs and outputs and "
+"add additional labels if needed\nnum_ports=get_param(gcb,'Ports');\nnum_input"
+"s=num_ports(1); num_outputs=num_ports(2);\nif num_inputs>=3\n    MDstr=[MDstr"
+" 'port_label(''input'', 3, ''mode'');'];\nend\nif num_outputs>=1\n    MDstr=["
+"MDstr 'port_label(''output'', 1, ''mute time [ms]'');'];\nend\nset_param(gcb,"
+"'MaskDisplay',MDstr)\n"
+      MaskDisplay	      "image(imread('RehaStim-background.png'), [0.05 "
+"0.25 0.9 0.9]);port_label('input', 1, 'current');port_label('input', 2, 'puls"
+"ewidth');text(0.25,0.1,['Serial Port: COM' num2str(com_port)],'horizontalAlig"
+"nment','left','verticalAlignment','bottom');text(0.25,0,['Channels: ' num2str"
+"(channelstim)],'horizontalAlignment','left','verticalAlignment','bottom');por"
+"t_label('input', 3, 'mode');port_label('output', 1, 'mute time [ms]');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "0.05|COM2|[1 2]|0|5|[]|[]|on|on"
+      MaskTabNameString	      ",,,,,,,,"
+      System {
+	Name			"Stimulator Interface"
+	Location		[1235, 162, 1837, 631]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "current"
+	  Position		  [180, 118, 210, 132]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pulsewidth"
+	  Position		  [115, 158, 145, 172]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "mode"
+	  Position		  [175, 198, 205, 212]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [3, 1]
+	  Position		  [255, 106, 330, 224]
+	  FunctionName		  "sfc_clm"
+	  Parameters		  "Ts,com_port,channelstim,tsone,tstwo,0,chann"
+"ellf,nfactor"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "mute period [ms]"
+	  Position		  [450, 158, 480, 172]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "current"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "pulsewidth"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "mute period [ms]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "mode"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulator Interface\nold"
+      Ports		      [3, 1]
+      Position		      [325, 49, 540, 211]
+      FontSize		      12
+      FontWeight	      "bold"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskHideContents	      off
+      MaskType		      "Stimulator Interface (RehaStim - Hasomed GmbH)"
+      MaskDescription	      "Communication to the 8-channel RehaStim Stimula"
+"tor (HASOMED GmbH) through the serial port.\n\nSample Time:	  The samp"
+"le time of the block (not neccessarily of the stimulation).\nSerial Port:"
+"	  The serial port connected to the stimulator.\nChannels:	  An"
+" array of channel numbers to be used (e.g. [1 2 5]).\nMain Time:	  The"
+" stimulation period (set this to 0 for external triggering).\nGroup Time:"
+"	  The time between pulses in a group (doublet or triplet).\nLow Freq "
+"Ch:	  A sub-set of the channels selected for low frequency.\nLow Freq "
+"Fc:	  Stimulation is only every n times (n=factor).\n"
+      MaskHelp		      "eval('open(''SciencStimHasomed_Help.html'')')"
+      MaskPromptString	      "Sample Time:|Serial Port:|Channels to be Stimul"
+"ated:|Main Time in ms (only in steps of 0.5 ms):|Group Time in ms (only in st"
+"eps of 0.5 ms):|Low Frequency Channels:|Low Frequency Factor:"
+      MaskStyleString	      "edit,popup(COM1|COM2|COM3|COM4|COM5|COM6|COM7|C"
+"OM8|COM9|COM10|COM11|COM12|COM13|COM14|COM15|COM16|COM17|COM18|COM19|COM20),e"
+"dit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,off,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "Ts=@1;com_port=@2;channelstim=@3;tsone=@4;tstwo"
+"=@5;channellf=@6;nfactor=@7;"
+      MaskDisplay	      "image(imread('RehaStim-background.png'), [0.05 "
+"0.25 0.9 0.9]);\nport_label('input', 1, 'current');\nport_label('input', 2, '"
+"pulsewidth');\nport_label('input', 3, 'mode');\nport_label('output', 1, 'mute"
+" period [ms]');\ntext(0.25,0.1,['Serial Port: COM' num2str(com_port)],'horizo"
+"ntalAlignment','left','verticalAlignment','bottom')\ntext(0.25,0,['Channels: "
+"' num2str(channelstim)],'horizontalAlignment','left','verticalAlignment','bot"
+"tom')\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "0.05|COM2|[1 2]|0|5|[]|[]"
+      MaskTabNameString	      ",,,,,,"
+      System {
+	Name			"Stimulator Interface\nold"
+	Location		[198, 287, 796, 646]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "current"
+	  Position		  [180, 118, 210, 132]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pulsewidth"
+	  Position		  [115, 158, 145, 172]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "mode"
+	  Position		  [180, 198, 210, 212]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [3, 1]
+	  Position		  [255, 106, 330, 224]
+	  FunctionName		  "sfc_clm"
+	  Parameters		  "Ts,com_port,channelstim,tsone,tstwo,0,chann"
+"ellf,nfactor"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "mute period [ms]"
+	  Position		  [420, 158, 450, 172]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "mute period [ms]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "mode"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "S-Function"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "pulsewidth"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "current"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulator Interface1"
+      Ports		      [3, 1]
+      Position		      [265, 289, 480, 451]
+      FontSize		      12
+      FontWeight	      "bold"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskHideContents	      off
+      MaskType		      "Stimulator Interface (RehaStim - Hasomed GmbH)"
+      MaskDescription	      "Communication to the 8-channel RehaStim Stimula"
+"tor (HASOMED GmbH) through the serial port.\n\nSample Time:	  The samp"
+"le time of the block (not neccessarily of the stimulation).\nSerial Port:"
+"	  The serial port connected to the stimulator.\nChannels:	  An"
+" array of channel numbers to be used (e.g. [1 2 5]).\nMain Time:	  The"
+" stimulation period (set this to 0 for external triggering).\nGroup Time:"
+"	  The time between pulses in a group (doublet or triplet).\nLow Freq "
+"Ch:	  A sub-set of the channels selected for low frequency.\nLow Freq "
+"Fc:	  Stimulation is only every n times (n=factor).\n"
+      MaskHelp		      "eval('open(''SciencStimHasomed_Help.html'')')"
+      MaskPromptString	      "Sample Time:|Serial Port:|Channels to be Stimul"
+"ated:|Main Time in ms (only in steps of 0.5 ms):|Group Time in ms (only in st"
+"eps of 0.5 ms):|Low Frequency Channels:|Low Frequency Factor:|Enable mute per"
+"iod output|Enable doublets and triplets"
+      MaskStyleString	      "edit,popup(COM1|COM2|COM3|COM4|COM5|COM6|COM7|C"
+"OM8|COM9|COM10|COM11|COM12|COM13|COM14|COM15|COM16|COM17|COM18|COM19|COM20),e"
+"dit,edit,edit,edit,edit,checkbox,checkbox"
+      MaskTunableValueString  "on,off,on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||||% Get the mask parameter values. This i"
+"s a cell array of strings.\nmaskStr = get_param(gcb,'MaskValues');\n% The dou"
+"blet / triplet flag is the 9th mask parameter.\n% Check the value selected \n"
+"if strcmp(maskStr{9},'on'),\n    % show associated parameter (Group Time)\n  "
+"  set_param(gcb,'MaskVisibilities',{'on';'on';'on';'on';'on';'on';'on';'on';'"
+"on'})\nelse\n    % hide associated parameter (Group Time)\n    set_param(gcb,"
+"'MaskVisibilities',{'on';'on';'on';'on';'off';'on';'on';'on';'on'})\n    % Ma"
+"ke sure Group time is large enough if doublet / triplet is off\n    % It must"
+" be at least 1.5 x Number_of_Channels, so we add 0.5 to that\n    tstwo = 1.5"
+"*length(channelstim)+0.5;\nend"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,,"
+      MaskVariables	      "Ts=@1;com_port=@2;channelstim=@3;tsone=@4;tstwo"
+"=@5;channellf=@6;nfactor=@7;outflag=@8;dtflag=@9;"
+      MaskInitialization      "%----------------------------------------------"
+"-----------------------------\n% Mute Output\n% Get the mask parameter values"
+". This is a cell array of strings.\nmaskStr = get_param(gcb,'MaskValues');\n%"
+" The outflag is the 8th mask parameter.\n    block = 'mute period [ms]';\n   "
+" system_block = [gcb '/' block];\n    srcblock= 'S-Function';\n    system_src"
+"block= [gcb '/' srcblock];\n    pos=get_param(system_block,'position');\n    "
+"blocktype=get_param(system_block,'blocktype');\n% Check the value selected \n"
+"if strcmp(maskStr{8},'on'),\n    if ~strcmp(blocktype,'Outport')\n        del"
+"ete_line(gcb, [srcblock '/1'], [block '/1']);\n        delete_block(system_bl"
+"ock);\n        add_block('simulink/Sinks/Out1',system_block,'position',pos);"
+"\n        add_line(gcb, [srcblock '/1'], [block '/1']);\n    end\nelse\n    i"
+"f ~strcmp(blocktype,'Terminator')\n        delete_line(gcb, [srcblock '/1'], "
+"[block '/1']);\n        delete_block(system_block);\n        add_block('simul"
+"ink/Sinks/Terminator',system_block,'position',pos);\n        add_line(gcb, [s"
+"rcblock '/1'], [block '/1']);\n    end\nend\n%-------------------------------"
+"--------------------------------------------\n% Mode input\n% Get the mask pa"
+"rameter values. This is a cell array of strings.\nmaskStr = get_param(gcb,'Ma"
+"skValues');\n% The doublet / triplet flag is the 9th mask parameter.\n    blo"
+"ck = 'mode';\n    system_block = [gcb '/' block];\n    sinkblock= 'S-Function"
+"';\n    system_sinkblock= [gcb '/' sinkblock];\n    pos=get_param(system_bloc"
+"k,'position');\n    blocktype=get_param(system_block,'blocktype');\n% Check t"
+"he value selected \nif strcmp(maskStr{9},'on'),\n    if ~strcmp(blocktype,'In"
+"port')\n        delete_line(gcb, [block '/1'], [sinkblock '/3']);\n        de"
+"lete_block(system_block);\n        add_block('simulink/Sources/In1',system_bl"
+"ock,'Port','3','position',pos);\n        add_line(gcb, [block '/1'], [sinkblo"
+"ck '/3']);\n    end\nelse % disable mode input, setit to zeros\n    if ~strcm"
+"p(blocktype,'Constant')\n        delete_line(gcb, [block '/1'], [sinkblock '/"
+"3']);\n        delete_block(system_block);\n         add_block('simulink/Sour"
+"ces/Constant',system_block,'position',pos);\n        if exist('channelstim')"
+"\n            channelstim=[];\n        end\n        set_param(system_block,'v"
+"alue','zeros(1,length(channelstim))');\n        add_line(gcb, [block '/1'], ["
+"sinkblock '/3']);\n    end\nend\n\n%-----------------------------------------"
+"----------------------------------\n% default minimal Mask Display string\nMD"
+"str=['image(imread(''RehaStim-background.png''), [0.05 0.25 0.9 0.9]);'...\n "
+"   'port_label(''input'', 1, ''current'');'...\n    'port_label(''input'', 2,"
+" ''pulsewidth'');'...\n    'text(0.25,0.1,[''Serial Port: COM'' num2str(com_p"
+"ort)],''horizontalAlignment'',''left'',''verticalAlignment'',''bottom'');'..."
+"\n    'text(0.25,0,[''Channels: '' num2str(channelstim)],''horizontalAlignmen"
+"t'',''left'',''verticalAlignment'',''bottom'');'];\n% get the number of input"
+"s and outputs and add additional labels if needed\nnum_ports=get_param(gcb,'P"
+"orts');\nnum_inputs=num_ports(1); num_outputs=num_ports(2);\nif num_inputs>=3"
+"\n    MDstr=[MDstr 'port_label(''input'', 3, ''mode'');'];\nend\nif num_outpu"
+"ts>=1\n    MDstr=[MDstr 'port_label(''output'', 1, ''mute time [ms]'');'];\ne"
+"nd\nset_param(gcb,'MaskDisplay',MDstr)\n"
+      MaskDisplay	      "image(imread('RehaStim-background.png'), [0.05 "
+"0.25 0.9 0.9]);port_label('input', 1, 'current');port_label('input', 2, 'puls"
+"ewidth');text(0.25,0.1,['Serial Port: COM' num2str(com_port)],'horizontalAlig"
+"nment','left','verticalAlignment','bottom');text(0.25,0,['Channels: ' num2str"
+"(channelstim)],'horizontalAlignment','left','verticalAlignment','bottom');por"
+"t_label('input', 3, 'mode');port_label('output', 1, 'mute time [ms]');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "0.05|COM2|[1 2]|0|5|[]|[]|on|on"
+      MaskTabNameString	      ",,,,,,,,"
+      System {
+	Name			"Stimulator Interface1"
+	Location		[211, 169, 813, 599]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "current"
+	  Position		  [180, 118, 210, 132]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pulsewidth"
+	  Position		  [115, 158, 145, 172]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "mode"
+	  Position		  [170, 198, 200, 212]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [3, 1]
+	  Position		  [255, 106, 330, 224]
+	  FunctionName		  "sfc_clm"
+	  Parameters		  "Ts,com_port,channelstim,tsone,tstwo,0,chann"
+"ellf,nfactor"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "mute period [ms]"
+	  Position		  [405, 158, 435, 172]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "mode"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "mute period [ms]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "pulsewidth"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "current"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}
